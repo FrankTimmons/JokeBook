@@ -12,6 +12,7 @@ import getKanye from './kanye.js';
 $(document).ready(function() {
   let test = getRandomInt();
   console.log(data.results[test].Joke);
+});
 
 function clearFields() {
   $('#output').text("");
