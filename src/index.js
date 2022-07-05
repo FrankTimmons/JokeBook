@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import getKanye from './js/kanye.js';
 import getChuck from './js/chuck.js';
-
-
-
+import data from "./assets/jokes.json"
+//import ClassName from './Blank.js';
+import getKanye from './kanye.js';
 
 
 function clearFields() {
