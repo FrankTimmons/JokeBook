@@ -1,8 +1,7 @@
-export function getRandomInt() {
-    min = Math.ceil(0);
-    max = Math.floor(29,780);
-    return Math.floor(Math.random() * (max - min) + min);
+export default function getRandomInt() {
+  let min = Math.ceil(0);
+  let max = Math.floor(29780);
+  return Math.floor(Math.random() * (max - min) + min);
 }
-let index = getRandomInt();
-let output = data.results[index].Joke;
+
 
