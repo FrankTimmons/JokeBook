@@ -6,12 +6,20 @@ import data from "./assets/jokes.json";
 import getRandomInt from "./getRandomInt.js";
 import getKanye from './js/kanye.js';
 import getChuck from './js/chuck.js';
-import data from "./assets/jokes.json"
-import getKanye from './kanye.js';
 
 $(document).ready(function() {
-  let test = getRandomInt();
-  console.log(data.results[test].Joke);
+  $('#jokebtn').click(function() {
+    let test = getRandomInt();
+  $('.joke-output').text(data.results[test].Joke);
+  });
+  $('#1stbtn').click(function() {
+    clearFields();
+    makeApiCall();
+  });
+  $('#2ndbtn').click(function() {
+    clearChucksFields();
+    makeChucksApiCall();
+  });
 });
 
 function clearFields() {
@@ -32,15 +40,10 @@ async function makeApiCall() {
     getElements(response);
   }
 
-$(document).ready(function() {
-  $('#1stbtn').click(function() {
-    clearFields();
-    makeApiCall();
-  });
-});
 
-  function clearChucksFields() {
-    $('#chucksOutput').text("");
+
+function clearChucksFields() {
+  $('#chucksOutput').text("");
 }
 
 function getChucksElements(response) {
@@ -56,14 +59,3 @@ async function makeChucksApiCall() {
   const response = await getChuck.chuckJoke();
   getChucksElements(response);
 }
-
-$(document).ready(function() {
-  $('#2ndbtn').click(function() {
-    clearChucksFields();
-    makeChucksApiCall();
-  });
-});
-
-  
-
-
