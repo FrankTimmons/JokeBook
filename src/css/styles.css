@@ -1,0 +1,27 @@
+.container{
+  text-align: center;
+}
+
+.header{
+  height: 10%;
+  width: 100%;
+  background-color: rgb(18, 122, 129);
+  text-align: center;
+  padding: 1%;
+  color: white;
+}
+
+img {
+  height: 100%;
+  padding-left: 1%;
+}
+
+.profileLinks {
+  margin-top: 1%;
+  position: absolute;
+  left: 85%;
+  width: 15%;
+  height: 5%;
+  float: right;
+  margin-right: 0%;
+}
