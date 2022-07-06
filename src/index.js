@@ -10,7 +10,7 @@ import getChuck from './js/chuck.js';
 $(document).ready(function() {
   $('#jokebtn').click(function() {
     let test = getRandomInt();
-  $('.joke-output').text(data.results[test].Joke);
+  $('#output').text(data.results[test].Joke);
   });
   $('#1stbtn').click(function() {
     clearFields();
@@ -29,7 +29,7 @@ function clearFields() {
 function getElements(response) {
   if (response.quote) {
     console.log(response.quote)
-    $('#output').text(`${response.quote} `);
+    $('#output').text(`"${response.quote}"`);
   } else {
     $('.showErrors').text(`There was an error: ${response}`);
   }
@@ -43,15 +43,15 @@ async function makeApiCall() {
 
 
 function clearChucksFields() {
-  $('#chucksOutput').text("");
+  $('#output').text("");
 }
 
 function getChucksElements(response) {
   if (response.value) {
     console.log(response.value)
-    $('#chucksoutput').text(`${response.value} `);
+    $('#output').text(`${response.value}`);
   } else {
-    $('#chucksshowErrors').text(`There was an error: ${response}`);
+    $('#showErrors').text(`There was an error: ${response}`);
   }
 }
 
