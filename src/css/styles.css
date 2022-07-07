@@ -128,6 +128,7 @@ a, a:visited {
   color:rgba(0, 0, 0, 0);
   cursor: pointer;
 }
+
 @keyframes rainbow { 
   0%{background-position:left}
   50%{background-position:right}
@@ -182,6 +183,3 @@ a, a:visited {
 .button-container button{
   margin-right: 20px;
 }
-
-
-
