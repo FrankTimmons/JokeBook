@@ -6,12 +6,12 @@ import cleanData from "./assets/cleanJokes.json";
 import getRandomInt from "./js/getRandomInt.js";
 import getKanye from './js/kanye.js';
 import getChuck from './js/chuck.js';
-import CopyToClipboard from './js/copyboard.js'
+import CopyToClipboard from './js/copyboard.js';
 
 $(document).ready(function() {
   $('#jokebtn').click(function() {
-    let test = getRandomInt();
-    $('#output').html(cleanData[test].Joke);
+    let randonum = getRandomInt();
+    $('#output').html(cleanData[randonum].Joke);
   });
   $('#1stbtn').click(function() {
     clearFields();
@@ -25,7 +25,6 @@ $(document).ready(function() {
 
 $('.outputbox').click(function() {
   CopyToClipboard('output');
-  console.log('click');
 });
 
 function clearFields() {
@@ -34,7 +33,6 @@ function clearFields() {
 
 function getElements(response) {
   if (response.quote) {
-    console.log(response.quote)
     $('#output').text(`"${response.quote}"`);
   } else {
     $('.showErrors').text(`There was an error: ${response}`);
@@ -52,7 +50,6 @@ function clearChucksFields() {
 
 function getChucksElements(response) {
   if (response.value) {
-    console.log(response.value)
     $('#output').text(`${response.value}`);
   } else {
     $('#showErrors').text(`There was an error: ${response}`);

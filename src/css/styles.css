@@ -104,15 +104,6 @@ a, a:visited {
   visibility: visible;
 }
 
-/* #output {
-  text-align: center;
-  display: block;
-  margin: auto;
-  width: 100%;
-  font-size: 3rem;
-  word-wrap: break-word;
-} */
-
 .wrap{
   width:100%;
 }
@@ -123,7 +114,7 @@ a, a:visited {
   background-size: 200% 200%;
   animation: rainbow 2s ease-in-out infinite;
   background-clip: text;
-  -webkit-background-clip:text;
+  -webkit-background-clip: text;
   color: white;
   font-size:2rem;
   width:100%;
@@ -134,7 +125,6 @@ a, a:visited {
 }
 
 #output:hover{
-  /* -webkit-text-stroke: .5px rgb(174, 247, 1); text border */
   color:rgba(0, 0, 0, 0);
   cursor: pointer;
 }

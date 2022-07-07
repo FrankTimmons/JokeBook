@@ -3,7 +3,7 @@
 
 ## Description
 #### This is a webpage written in HTML using bootstrap css for styling and JavaScript for functionality.
-#### It will generate jokes and quotes of various types from various people.
+#### It will generate jokes and quotes of various types from various people.   
 
 ## Technologies Used
 
@@ -17,8 +17,11 @@
 | ------ | ------ |
 | Chuck Norris | https://api.chucknorris.io/jokes/random |
 | Kanye West | https://api.kanye.rest |
-| **.CSV Used** | **Link** |
+
+| .CSV Used | Link |
+| ------ | ------ |
 | Jokes | https://www.kaggle.com/datasets/abhinavmoudgil95/short-jokes |
+| Clean Jokes | https://github.com/amoudgl/short-jokes-dataset/blob/master/data/reddit-cleanjokes.csv |
 
 ## Setup/Installation Requirements
 
@@ -38,10 +41,10 @@ $ npm run start
 
 ## Known Bugs
 
-* _No known issues_
+* _When hovering over our Github profile pictures, an unintended back tick displays to the left._
 
 ## License
 
-_none_
+[MIT](/LICENSE)
 
 Copyright (c) _7/5/2022_ _Matt Herbert, Maxwell Alvord, Frank Timmons, & Grace Kostanich_
