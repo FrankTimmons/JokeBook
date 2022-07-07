@@ -113,7 +113,6 @@ a, a:visited {
   word-wrap: break-word;
 } */
 
-
 .wrap{
   width:100%;
 }
@@ -133,6 +132,7 @@ a, a:visited {
   transition: color .2s ease-in-out;
   font-weight:900;
 }
+
 #output:hover{
   /* -webkit-text-stroke: .5px rgb(174, 247, 1); text border */
   color:rgba(0, 0, 0, 0);
