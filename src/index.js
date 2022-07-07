@@ -6,11 +6,12 @@ import data from "./assets/jokes.json";
 import getRandomInt from "./getRandomInt.js";
 import getKanye from './js/kanye.js';
 import getChuck from './js/chuck.js';
+import  CopyToClipboard from './js/copyboard.js'
 
 $(document).ready(function() {
   $('#jokebtn').click(function() {
     let test = getRandomInt();
-  $('#output').text(data.results[test].Joke);
+    $('#output').html(data.results[test].Joke);
   });
   $('#1stbtn').click(function() {
     clearFields();
@@ -20,6 +21,11 @@ $(document).ready(function() {
     clearChucksFields();
     makeChucksApiCall();
   });
+});
+
+$('.outputbox').click(function() {
+  CopyToClipboard('output');
+  console.log('click');
 });
 
 function clearFields() {
@@ -38,9 +44,7 @@ function getElements(response) {
 async function makeApiCall() {
     const response = await getKanye.kanyeQuote();
     getElements(response);
-  }
-
-
+}
 
 function clearChucksFields() {
   $('#output').text("");

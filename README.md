@@ -1,30 +1,40 @@
-# _JokeBook_
+   # **JokeBook**
+#### Creators : _**Matt Herbert, Maxwell Alvord, Frank Timmons, & Grace Kostanich**_   
 
-#### By _**Matt Herbert, Maxwell Alvord, Frank Timmons, & Grace Kostanich**_
-
-#### _This webpage will generate jokes and quotes of various types from various people._
+## Description
+#### This is a webpage written in HTML using bootstrap css for styling and JavaScript for functionality.
+#### It will generate jokes and quotes of various types from various people.
 
 ## Technologies Used
 
-* _HTML_
-* _CSS_
-* _JS_
+* HTML
+* CSS
+* JS
 
-## Description
+## APIs / .CSV
 
-_This is a webpage written in HTML using bootstrap css for styling and JavaScript for functionality._
+| APIs Used | Link |
+| ------ | ------ |
+| Chuck Norris | https://api.chucknorris.io/jokes/random |
+| Kanye West | https://api.kanye.rest |
+| **.CSV Used** | **Link** |
+| Jokes | https://www.kaggle.com/datasets/abhinavmoudgil95/short-jokes |
 
 ## Setup/Installation Requirements
 
-* _Fork project to your own GitHub repository_ 
-* _Clone that repository to your desktop_
-* _Run `$npm install` in root directory to receive all dependencies_
-* _Create file called ".env" in root directory of this project_
-* _Generate your own API key from [INSERT LINK HERE]_
-* _In "./.env" file, type "API_KEY=" then paste in your API key after the "="_ 
+* Fork project to your own GitHub repository
+* Clone that repository to your desktop
+* To receive all dependencies in root directory,
+```sh
+$ npm install
+```
+* Create file called ".env" in root directory of this project
+* You do not need to generate your own API keys for this project 
 * To view website:
-* _Run `$ npm run build`_
-* _Run `$npm run start` or open a live server on "./dist/index.html"_
+```sh
+$ npm run build
+$ npm run start
+```
 
 ## Known Bugs
 
