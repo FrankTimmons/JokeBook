@@ -32,6 +32,16 @@ img {
   padding-left: 1%;
 }
 
+a {
+  text-decoration: none;
+  outline: none;
+  color:black;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
 .profileLinks {
   position: absolute;
   left: 85%;
@@ -67,11 +77,9 @@ img {
   font-size: x-large;
   color: white;
   font-weight: bold;
-  text-shadow: 2px 2px #ff0000;
   transition: .2s;
   position: relative;
   display: inline-block;
-  position: relative;
   margin-bottom: 5%;
 }
 
@@ -96,20 +104,45 @@ img {
   visibility: visible;
 }
 
-
-#output {
+/* #output {
   text-align: center;
   display: block;
   margin: auto;
   width: 100%;
   font-size: 3rem;
   word-wrap: break-word;
+} */
+
+
+.wrap{
+  width:100%;
 }
 
-/* .testFoot {
-  display: flex; 
-  justify-self: flex-end;
-} */
+#output{
+  font-family:"Abril Fatface", sans-serif;
+  background: linear-gradient(to right,rgb(250, 157, 242),rgb(255, 255, 255),rgb(255, 197, 29));
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip:text;
+  color: white;
+  font-size:2rem;
+  width:100%;
+  display:block;
+  text-align:center;
+  transition: color .2s ease-in-out;
+  font-weight:900;
+}
+#output:hover{
+  /* -webkit-text-stroke: .5px rgb(174, 247, 1); text border */
+  color:rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+@keyframes rainbow { 
+  0%{background-position:left}
+  50%{background-position:right}
+  100%{background-position:left}
+}
 
 .marginFoot{
   width: 100%;
