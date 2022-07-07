@@ -2,16 +2,16 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import data from "./assets/jokes.json";
-import getRandomInt from "./getRandomInt.js";
+import cleanData from "./assets/cleanJokes.json";
+import getRandomInt from "./js/getRandomInt.js";
 import getKanye from './js/kanye.js';
 import getChuck from './js/chuck.js';
-import  CopyToClipboard from './js/copyboard.js'
+import CopyToClipboard from './js/copyboard.js'
 
 $(document).ready(function() {
   $('#jokebtn').click(function() {
     let test = getRandomInt();
-    $('#output').html(data.results[test].Joke);
+    $('#output').html(cleanData[test].Joke);
   });
   $('#1stbtn').click(function() {
     clearFields();
@@ -42,8 +42,8 @@ function getElements(response) {
 }
 
 async function makeApiCall() {
-    const response = await getKanye.kanyeQuote();
-    getElements(response);
+  const response = await getKanye.kanyeQuote();
+  getElements(response);
 }
 
 function clearChucksFields() {
